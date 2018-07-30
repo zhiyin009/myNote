@@ -2,8 +2,8 @@
 using namespace std;
 
 /*
-	C++ iostream³ÌÐò¿âÖÐÓÃÓÚ·ÀÖ¹copyÐÐÎª
-	memberº¯Êý»òfriendº¯ÊýÖ®ÄÚ¿½±´²Ù×÷£¬Á´½ÓÆ÷±¨´í¡£³ý´ËÖ®ÍâÊÇ±àÒëÆ÷±¨´í
+	C++ iostreamç¨‹åºåº“ä¸­ç”¨äºŽé˜²æ­¢copyè¡Œä¸º
+	memberå‡½æ•°æˆ–friendå‡½æ•°ä¹‹å†…æ‹·è´æ“ä½œï¼Œé“¾æŽ¥å™¨æŠ¥é”™ã€‚é™¤æ­¤ä¹‹å¤–æ˜¯ç¼–è¯‘å™¨æŠ¥é”™
 */
 class Uncopyable
 {
@@ -13,7 +13,7 @@ private:
 };
 
 /*
-	½«ÉÏÊöÁ´½ÓÆ÷±¨´íÒÆÖÁ±àÒëÆ÷·¢³ö£¨¸üÔç²ì¾õ£©
+	å°†ä¸Šè¿°é“¾æŽ¥å™¨æŠ¥é”™ç§»è‡³ç¼–è¯‘å™¨å‘å‡ºï¼ˆæ›´æ—©å¯Ÿè§‰ï¼‰
 */
 class UncopyableBase
 {

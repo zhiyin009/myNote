@@ -2,16 +2,16 @@
 #include <string>
 using namespace std;
 
-// ÎÒÖ»ÊÇÓÃÀ´´òÓ¡µÄ
+// æˆ‘åªæ˜¯ç”¨æ¥æ‰“å°çš„
 class PrintClass
 {
 public:
 	PrintClass(string& func) {
 		m_func = func;
-		cout << m_func << "¹¹ÔìPrintClass" << endl; 
+		cout << m_func << "ï¿½ï¿½ï¿½ï¿½PrintClass" << endl; 
 	}
 	~PrintClass() { 
-		cout << m_func << "Îö¹¹PrintClass" << endl;
+		cout << m_func << "ï¿½ï¿½ï¿½ï¿½PrintClass" << endl;
 	}
 
 private:
@@ -19,10 +19,10 @@ private:
 };
 
 /*
-	Îö¹¹º¯ÊıµÄÔË×÷·½Ê½ÊÇ´Ó×îÉî²ãÅÉÉúµÄclass¿ªÊ¼Îö¹¹
-	Æä´ÎÊÇÃ¿Ò»¸öbase class
-	±àÒëÆ÷»áÔÚ×ÓÀàÖĞ´´½¨Ò»¸ö¶Ô¸¸ÀàÎö¹¹µÄµ÷ÓÃ£¬ËùÒÔº¯Êı±ØĞëÌá¹©¶¨Òå
-	Èç¹ûÒÅÂ©£¬Á´½ÓÆ÷½«»á±§Ô¹
+	ææ„å‡½æ•°çš„è¿ä½œæ–¹å¼æ˜¯ä»æœ€æ·±å±‚æ´¾ç”Ÿçš„classå¼€å§‹ææ„
+	å…¶æ¬¡æ˜¯æ¯ä¸€ä¸ªbase class
+	ç¼–è¯‘å™¨ä¼šåœ¨å­ç±»ä¸­åˆ›å»ºä¸€ä¸ªå¯¹çˆ¶ç±»ææ„çš„è°ƒç”¨ï¼Œæ‰€ä»¥å‡½æ•°å¿…é¡»æä¾›å®šä¹‰
+	å¦‚æœé—æ¼ï¼Œé“¾æ¥å™¨å°†ä¼šæŠ±æ€¨
 */
 class BaseClass
 {

@@ -6,8 +6,8 @@ class TClass
 public:
 	TClass() { memset(m_list, 0, sizeof(m_list)); }
 
-	size_t &operator[](int i) { return ++m_list[i]; }	// ·Çconst°æ±¾¸Ä±äÖµ
-	const size_t &operator[](int i) const				// const°æ±¾µ÷ÓÃ·Çconst£¬ÆÆ»µlogical constness
+	size_t &operator[](int i) { return ++m_list[i]; }   // éconstç‰ˆæœ¬æ”¹å˜å€¼
+	const size_t &operator[](int i) const				// constç‰ˆæœ¬è°ƒç”¨éconstï¼Œç ´ålogical constness
 	{
 		return static_cast<const size_t&>(
 			const_cast<TClass&>(*this)[i]);
