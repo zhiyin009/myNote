@@ -40,4 +40,6 @@ int main() {
     类相关的函数应该包在一起”的旧有认识。
     2.member函数的反面是non-member函数而非friend函数，不该因为无法成为member而
     直接赋予non-member。
+    要点：
+    如果需要为某个函数的所有参数（包括被this指针所指的那个隐喻参数）进行类型转换，那么这个函数必须是个non-member。
  */
