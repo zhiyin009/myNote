@@ -8,10 +8,10 @@ class PrintClass
 public:
 	PrintClass(string& func) {
 		m_func = func;
-		cout << m_func << "����PrintClass" << endl; 
+		cout << m_func << "PrintClass" << endl;
 	}
-	~PrintClass() { 
-		cout << m_func << "����PrintClass" << endl;
+	~PrintClass() {
+		cout << m_func << "~PrintClass" << endl;
 	}
 
 private:
