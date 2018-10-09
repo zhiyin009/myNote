@@ -12,5 +12,7 @@
         "string_view": "cpp",
         "tuple": "cpp",
         "vector": "cpp"
-    }
+    },
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
 }
