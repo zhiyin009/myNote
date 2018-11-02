@@ -1,4 +1,3 @@
-#include <functional>
 #include <iostream>
 
 namespace CommonDemo {
@@ -73,7 +72,7 @@ class Menu {
 
 /* PrettyMenu Impl
    封装性已经由 pImpl 是 private 保证了。
-   也可以将 PMImpl 嵌套于PrettyMenu中，但打包问题（packaging，如“独立撰写一场安全码”），
+   也可以将 PMImpl 嵌套于PrettyMenu中，但打包问题（packaging，如“独立撰写异常安全码”），
    是我们这里所挂虑的事。
  */
 struct PMImpl {
@@ -114,11 +113,10 @@ int main() {
 /* 
    要点：
    异常安全性的函数满足条件：
-    不泄漏任何资源
-    不允许数据败坏
+    不泄漏任何资源：如资源锁在new失败后未解锁。
+    不允许数据败坏：如资源指针在new失败后被改变。
    异常安全性的函数会提供以下保证：
-    基本承诺：
-    强烈保证：
-    不抛掷保证：
-   
+    基本承诺：如果异常被抛出，程序内的任何事物仍然保持在有效状态下。
+    强烈保证：如果异常被抛出，程序状态不改变。
+    不抛掷保证：承诺绝不抛出异常，因为它们总是能够完成它们原先承诺的功能。
  */
